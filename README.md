@@ -10,10 +10,15 @@ individuals' shopping transactions, personal contacts, and medical records. Many
 # Description of Files
 You need to install Tensorflow python-package 'privacy'(https://github.com/tensorflow/privacy) to run the following codes.
 
-## [lambda_to_alpha.R](lambda_to_alpha.R) 
+## Four datasets:
+[mnist_tutorial.py]: private CNN on MNIST
 
-Compute state evolution and calibration between **\alpha** and **\lambda** of SLOPE-AMP.
+[adult_tutorial.py]: private NN on Adult data
 
-## [AMPfaster.R](AMPfaster.R)
+[imdb_tutorial.py]: private NN on IMDB reviews
+
+[movielens_tutorial.py]: private NN on MovieLens 1M
+
+## [AMPfaster.R]
 
 This is an example implementation of SLOPE-AMP converging much faster than other commonly known iterative algorithms including ISTA and FISTA.
