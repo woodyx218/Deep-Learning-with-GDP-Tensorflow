@@ -37,7 +37,7 @@ n_movies=3706
 
 def nn_model_fn(features, labels, mode):
 #https://github.com/hexiangnan/neural_collaborative_filtering
-#https://nipunbatra.github.io/blog/2017/neural-collaborative-filtering.html
+#https://nipunbatra.github.io/blog/ml/2017/12/29/neural-collaborative-filtering.html
 #https://github.com/tiangolo/tensorflow-models/blob/master/official/recommendation/neumf_model.py
     n_latent_factors_user = 10
     n_latent_factors_movie = 10
