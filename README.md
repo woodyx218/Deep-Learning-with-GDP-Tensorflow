@@ -19,8 +19,8 @@ You need to install Tensorflow python-package [privacy](https://github.com/tenso
 
 [movielens_tutorial.py](movielens_tutorial.py): private NN on MovieLens 1M
 
-## [Privacy Accountants](privacy_accountants.py)
-The script computes the moments accountant (MA), central limit theorem (CLT) and dual relation (Dual) between **\delta,\epsilon,\mu**.
+## Privacy Accountants
+[gdp_accountant.py](privacy_accountant.py) computes the moments accountant (MA), central limit theorem (CLT) and dual relation (Dual) between **\delta,\epsilon,\mu**. This computation does not have any TensorFlow dependencies and thus is extremely fast.
 
-## [Plots](mnist_plot.py)
-This script together with the saved pickles can easily reproduce the figures in the paper.
+## Plots
+[mnist_plot.py](mnist_plot.py) together with the saved pickles can easily reproduce the figures in the paper.
