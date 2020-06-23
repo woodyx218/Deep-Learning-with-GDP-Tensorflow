@@ -7,4 +7,5 @@ absl-py>=0.9
 tensorflow-privacy>=0.3
 pandas>=1.0
 keras>=2.3
+keras-preprocessing>=1.1
 sklearn>=0.23
