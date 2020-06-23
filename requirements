@@ -1,0 +1,8 @@
+numpy>=1.15
+tensorflow>=2.0
+tensorflow-estimator>=2.0
+scipy>=1.4
+future>=0.18
+absl-py>=0.9
+tensorflow-privacy>=0.3
+pandas>=1.0
