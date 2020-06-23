@@ -139,7 +139,7 @@ def main(unused_argv):
           y=train_labels[subsampling],
           batch_size=len(subsampling),
           num_epochs=1,
-          shuffle=False)
+          shuffle=True)
         # Train the model for one step.
         imdb_classifier.train(input_fn=train_input_fn, steps=1)
 
