@@ -1,11 +1,11 @@
 numpy>=1.15
-tensorflow>=2.0
-tensorflow-estimator>=2.0
+tensorflow>=2.1
+tensorflow-estimator>=2.1
 scipy>=1.4
 future>=0.18
 absl-py>=0.9
 tensorflow-privacy>=0.3
 pandas>=1.0
-keras>=2.3
+keras>=2.1
 keras-preprocessing>=1.1
 sklearn>=0.23
