@@ -58,7 +58,7 @@ from tensorflow_privacy.privacy.analysis.rdp_accountant import get_privacy_spent
 # Compute epsilon by MA
 def compute_epsilon(epoch,noise_multi,N,batch_size,delta):
   """Computes epsilon value for given hyperparameters."""
-  orders = [1 + x / 10. for x in range(1, 100)] + list(range(12, 64))
+  orders = [1 + x / 10. for x in range(1, 100)] + list(np.arange(12, 60,0.2))+list(np.arange(60,100,1))
   sampling_probability = batch_size / N
   rdp = compute_rdp(q=sampling_probability,
                     noise_multiplier=noise_multi,
