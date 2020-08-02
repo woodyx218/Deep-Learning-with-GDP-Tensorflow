@@ -15,12 +15,18 @@ You need to install Tensorflow python-package [privacy](https://github.com/tenso
 
 [adult_tutorial.py](adult_tutorial.py): private NN on Adult data
 
-[imdb_tutorial.py](imdb_tutorial.py): private NN on IMDB reviews
+[imdb_tutorial.py](imdb_tutorial.py): private NN on IMDB reviews (LSTM is too slow but still executable)
 
 [movielens_tutorial.py](movielens_tutorial.py): private NN on MovieLens 1M
 
 ## Privacy Accountants
-[gdp_accountant.py](privacy_accountant.py) computes the moments accountant (MA), central limit theorem (CLT) and dual relation (Dual) between **\delta,\epsilon,\mu**. This computation does not have any TensorFlow dependencies and thus is extremely fast.
+[gdp_accountant.py](privacy_accountant.py) computes the moments accountant (MA), central limit theorem (CLT) and dual relation (Dual) between **\delta,\epsilon,\mu**. This computation does not have any TensorFlow dependencies and is **data-independent**, and thus is extremely fast.
+
+For example, if you run MNIST dataset (60,000 samples) for 15 epochs, batch size 256, noise level 1.3 and \delta 1e-5, then your \epsilon is 
+
+**By Moments Accountant** compute_epsilon(15,1.3,60000,256,1e-5)=1.1912
+**By GDP CLT (Uniform subsampling)** compute_epsU(15,1.3,60000,256,1e-5)=1.0685
+**By GDP CLT (Poisson subsampling)** compute_epsP(15,1.3,60000,256,1e-5)=0.8345
 
 ## Plots
 [mnist_plot.py](mnist_plot.py) together with the saved pickles can easily reproduce the figures in the paper.
