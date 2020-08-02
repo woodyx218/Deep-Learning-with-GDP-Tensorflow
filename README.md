@@ -19,7 +19,7 @@ You need to install Tensorflow python-package [privacy](https://github.com/tenso
 [movielens_tutorial.py](movielens_tutorial.py): private NN on MovieLens 1M
 
 ## Privacy Accountants
-[gdp_accountant.py](privacy_accountant.py) computes the moments accountant (MA), central limit theorem (CLT) and dual relation (Dual) between **\delta,\epsilon,\mu**. This computation does not have any TensorFlow dependencies and is **data-independent**, and thus is extremely fast.
+[gdp_accountant.py](gdp_accountant.py) computes the moments accountant (MA), central limit theorem (CLT) and dual relation (Dual) between **\delta,\epsilon,\mu**. This computation does not have any TensorFlow dependencies and is **data-independent**, and thus is extremely fast.
 
 For example, if you run MNIST dataset (60,000 samples) for 15 epochs, batch size 256, noise level 1.3 and \delta 1e-5, then your \epsilon is 
 
