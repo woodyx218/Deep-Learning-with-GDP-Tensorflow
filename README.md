@@ -4,8 +4,7 @@ This project contains scripts to reproduce experiments from the paper
 by Zhiqi Bu, Jinshuo Dong, Weijie Su and Qi Long.
 
 # The Problem of Interest
-Deep learning models are often trained on datasets that contain sensitive information such as
-individuals' shopping transactions, personal contacts, and medical records. Many differential privacy definitions arise for the study of trade-off between models' performance and privacy guarantees. We consider a recently proposed privacy definition termed f-differential privacy (https://arxiv.org/abs/1905.02383) for a refined privacy analysis of training neural networks.
+Deep learning models are often trained on datasets that contain sensitive information such as individuals' shopping transactions, personal contacts, and medical records. Many differential privacy definitions arise for the study of trade-off between models' performance and privacy guarantees. We consider a recently proposed privacy definition termed f-differential privacy (https://arxiv.org/abs/1905.02383) for a refined privacy analysis of training neural networks. Using GDP instead of (epsilon,delta)-DP, we can get much better privacy guarantee and alternatively, trade off some privacy for better accuracy.
 
 # Description of Files
 You need to install Tensorflow python-package [privacy](https://github.com/tensorflow/privacy) to run the following codes.
