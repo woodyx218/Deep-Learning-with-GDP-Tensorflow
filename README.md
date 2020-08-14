@@ -1,6 +1,6 @@
 # What is this?
-This project contains scripts to reproduce experiments from the paper 
-[Deep Learning with Gaussian Differential Privacy](https://arxiv.org/abs/1911.11607)
+This project contains scripts to reproduce experiments from my paper 
+[Deep Learning with Gaussian Differential Privacy](https://arxiv.org/abs/2007.11078)
 by Zhiqi Bu, Jinshuo Dong, Weijie Su and Qi Long.
 
 # The Problem of Interest
