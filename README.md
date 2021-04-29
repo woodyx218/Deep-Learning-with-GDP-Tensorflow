@@ -9,6 +9,17 @@ Deep learning models are often trained on datasets that contain sensitive inform
 # Description of Files
 You need to install Tensorflow python-package [privacy](https://github.com/tensorflow/privacy) to run the following codes.
 
+```bash
+pip install tensorflow-privacy
+```
+
+
+## Tutorial to Start
+
+---------------- Update on 2021/4/28-----------------
+
+### I write a [new notebook for tutorial](GDP_NN_tutorial.ipynb) of training deep neural network with Gaussian differential privacy. This works under the [Tensorflow Privacy](https://github.com/tensorflow/privacy) package, which is different from Pytorch privacy package, Opacus, in many ways.
+
 ## Four datasets:
 [mnist_tutorial.py](mnist_tutorial.py): private CNN on MNIST
 
