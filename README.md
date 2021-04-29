@@ -51,5 +51,5 @@ compute_epsP(15,1.3,60000,256,1e-5)=0.8345
 ## Plots
 [mnist_plot.py](mnist_plot.py) together with the saved pickles can easily reproduce the figures in the paper.
 
-E.g. MNIST in Figure 4 (Deep Learning with Gaussian Differential Privacy), our GDP CLT is both more accurate and more private then existing MA method.
-![alt text](https://github.com/woodyx218/Deep-Learning-with-GDP-Pytorch/mnist_eps.png)
+For example, MNIST in Figure 4 of our paper shows that our GDP CLT is both more accurate and more private then existing MA method.
+![mnist GDP](mnist_eps.png?raw=true)
