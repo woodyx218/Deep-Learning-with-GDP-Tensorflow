@@ -38,6 +38,8 @@ For example, if you run MNIST dataset (60,000 samples) for 15 epochs, batch size
 
 compute_epsilon(15,1.3,60000,256,1e-5)=1.1912
 
+%% this has been improved by Tensorflow-privacy using new Moments Accountant to epsilon = 0.9545.
+
 **By GDP CLT (Uniform subsampling):** 
 
 compute_epsU(15,1.3,60000,256,1e-5)=1.0685
@@ -48,3 +50,6 @@ compute_epsP(15,1.3,60000,256,1e-5)=0.8345
 
 ## Plots
 [mnist_plot.py](mnist_plot.py) together with the saved pickles can easily reproduce the figures in the paper.
+
+E.g. MNIST in Figure 4 (Deep Learning with Gaussian Differential Privacy), our GDP CLT is both more accurate and more private then existing MA method.
+![alt text](https://github.com/woodyx218/Deep-Learning-with-GDP-Pytorch/mnist_eps.png)
